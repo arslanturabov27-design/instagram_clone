@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Clone</title>
+</head>
+<body>
+
+<h1>Instagram</h1>
+
+{% for post in posts %}
+    <div>
+        <p><b>{{ post.user.username }}</b></p>
+        <img src="{{ post.image.url }}" width="300">
+        <p>{{ post.caption }}</p>
+    </div>
+{% endfor %}
+
+</body>
+</html>
